@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Heni Kimura</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Babylonica&display=swap" rel="stylesheet">
+
+    <!-- js  -->
+    <script defer src="index-script.js"></script> 
+</head>
+<body>
+<!-- header and nav menu -->
+    <header>
+       <h2 id="logo">Heni Kimura</h2>
+        <nav>
+            <li><a href="#">Home</a></li>
+            <li><a href="#personalLegend">Personal Legend</a></li>
+            <li><a href="#inPursuit">In Pursuit</a></li>
+            <li><a href="#contactMe">Contact</a></li>
+        </nav>
+    </header>
+<!-- hero banner, welcome area -->
+    <section class="welcome-area">
+        <div class="image-area"></div>
+            <div class="welcome-title">
+                <h1>Pursuing my Personal Legend</h1>
+            </div>
+<!-- counter -->
+            <div id="counter">Days and counting:
+               <div id="counter-value" data-val="13500">0</div>
+            </div>
+        
+    </section>
+<!-- main area cards -->
+    <section class="legend-area" id="personalLegend">
+        <h3 class="header-text">Come on the journey!</h3>
+
+
+        <div class="content-area" id="personalLegend">
+            <div class="content-space">
+                    <div class="icon-area">
+                        <i class="fa fa-key" aria-hidden="true"></i>
+                    </div>
+            <h2>My Personal Legend</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p> 
+            <p><a href="">Read more..</a></p>
+            </div>
+        </div>
+
+        <div class="content-area" id="inPursuit">
+            <div class="content-space"> 
+                <div class="icon-area">
+                    <i class="fa fa-trophy" aria-hidden="true"></i>
+                </div>
+            <h2>In Pursuit</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p> 
+            <p><a href="">Read more..</a></p>
+            </div> 
+        </div>
+
+     </section>
+<!-- newsletter subscription -->
+    <section class="newsletter" id="newsletter">
+        <h3 class="header-text">Subscribe</h3>
+        <p>Want to keep updated? Subscribe here!</p>
+        <div id="error"></div>
+        <div id="success"></div>
+        <form id="form" method="POST" >
+            <input id="email" name="email" type="email" placeholder="Email" required>
+            <button id="button">Subscribe</button>
+        </form>
+    </section>
+<!-- contact area -->
+    <section class="contactMe" id="contactMe">
+        <h3 class="header-text">Contact Me</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <div class="content-area">
+
+            <div class="contact">
+                <i class="fa fa-github fa-2x"></i>
+                <i class="fa fa-twitter  fa-2x"></i>
+                <i class="fa fa-instagram fa-2x"></i>
+            </div>
+
+            <form class="contact" id="contacts" method="POST">
+                <input id=names name=name type="text" required placeholder="Enter your name...">
+                <input id=emails name=email type="email" required placeholder="Enter your email...">
+                <input id=submit name=submit type="submit" value="submit" required>
+                <div id="contactError"></div>
+                <div id="contactSuccess"></div>
+            </form>
+
+        </div>
+    
+    </section>
+<!-- footer -->
+    <footer>
+        <p>Copyright &copy; some rights reserved by <a href=>Heni Kimura</a></p>
+    </footer>    
+</body>
+</html>

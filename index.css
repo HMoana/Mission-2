@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: #b28657;
+  font-family: "Philosopher", "sans-serif";
+  scroll-behavior: smooth;
+  background-color: #d7d6d3;
+}
+
+/* nav menu list style.layout */
+ul,
+nav {
+  list-style: none;
+  font-size: 16px;
+}
+
+/* nav menu links style.layout */
+a {
+  text-decoration: none;
+  opacity: 0.75;
+  color: #b28657;
+}
+
+/* nav menu links hover style.layout */
+nav a:hover {
+  opacity: 1;
+  background: #62492d;
+  color: #333;
+}
+
+/* sections layout FLEXBOX */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 80px;
+}
+
+/* class header-text style.layout FLEXBOX */
+.header-text {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: "Philosopher", "sans-serif";
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* class content-area style.layout FLEXBOX */
+.content-area {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  background-color: #62492d;
+}
+
+/* all sections style.layout */
+section {
+  text-transform: uppercase;
+  font-family: "Philosopher", "sans-serif";
+  margin-top: 0px;
+  margin-bottom: 60px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* all Ps in sections style.layout */
+section p {
+  max-width: 700px;
+  line-height: 2;
+  padding: 0px 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 16px;
+  text-transform: none;
+}
+
+/* all Ps hover */
+p a:hover {
+  opacity: 1;
+  background: #62492d;
+  color: #333;
+}
+
+/* responsiveness for sections, h3 & class header text */
+@media (max-width: 768px) {
+  section {
+    padding: 50px 20px;
+  }
+  section h3 .header-text {
+    font-size: 30px;
+  }
+}
+
+/* header element style.layout FLEXBOX */
+header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 100px 0;
+  animation: 1s animate 0.5s forwards;
+  opacity: 0;
+  color: #b28657;
+  z-index: 10;
+  background-color: #62492d;
+}
+
+/* animation code for header element */
+@keyframes animate {
+  100% {
+    opacity: 1;
+  }
+}
+
+/* header element navmenu layout FLEXBOX */
+header nav {
+  display: flex;
+  margin-right: -15px;
+}
+
+/* header element navmenu list layout */
+header nav li {
+  margin: 0 15px;
+}
+
+/* responsiveness header element */
+@media (max-width: 768px) {
+  header {
+    padding: 20px 50px;
+    flex-direction: column;
+  }
+  header h2 {
+    margin-bottom: 15px;
+  }
+  header nav li {
+    margin: 0 7px;
+  }
+}
+
+/* welcome area section style.layout */
+.welcome-area {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  color: #8c6740;
+}
+
+/* welcome area & image section style.layout */
+.welcome-area .image-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(images/img000.jpg);
+  background-position: center center;
+}
+
+/* welcome area section h1 style.layout */
+.welcome-area h1 {
+  margin-bottom: 20px;
+  font-size: 60px;
+}
+
+/* welcome area title style.layout */
+.welcome-title,
+#counter {
+  font-family: "Philosopher", "sans-serif";
+  opacity: 0;
+  margin-top: 100px;
+  animation: 3s anime-two 3s forwards;
+}
+
+/* animation code for welcome title */
+@keyframes anime-two {
+  100% {
+    opacity: 1;
+    margin: 0;
+  }
+}
+
+/* responsiveness for welcome area */
+@media (max-width: 768px) {
+  .welcome-area {
+    min-height: 600px;
+  }
+  welcome-area h1 {
+    font-size: 28px;
+  }
+}
+
+/* class legend area and children FLEXBOX */
+.legend-area .content-area .content-space {
+  height: 300px;
+  padding: 20px;
+  flex-basis: 30%;
+  text-align: center;
+}
+
+/* child container layout*/
+.content-space h2 {
+  margin-bottom: 15px;
+}
+
+/* icon-area style.layout */
+.icon-area {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  background: #d7d6d3;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* icon-area style.layout */
+.icon-area i {
+  color: #b28657;
+  padding: 25px;
+  font-size: 30px;
+}
+
+/* icon-area hover styling*/
+.icon-area:hover {
+  opacity: 1;
+  background: #333;
+}
+
+/* responsiveness legend area and children */
+@media (max-width: 1000px) {
+  .legend-area .content-area .content-space {
+    flex-basis: 30%;
+  }
+}
+
+/* responsiveness legend area and children */
+@media (max-width: 800px) {
+  .legend-area .content-area .content-space {
+    flex-basis: 100%;
+  }
+  .content-space {
+    margin-bottom: 30px;
+  }
+}
+
+/* newsletter */
+.newsletter {
+  background-color: #62492d;
+}
+
+/* newsletter layout FLEXBOX */
+.newsletter form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 60px;
+}
+
+/* newsletter & contact styling */
+#email #name #names #emails {
+  background: #d7d6d3;
+  color: #333;
+  border-color: #333;
+  border-radius: 5px;
+}
+
+/* newsletter button style.layout */
+#button {
+  padding: 20px 40px;
+  background: #62492d;
+  border: none;
+  font-size: 16px;
+  color: #b28657;
+  font-family: "Philosopher", "sans-serif";
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* newsletter button hover layout */
+#button:hover {
+  opacity: 1;
+  background: #62492d;
+  color: #333;
+}
+
+/* newsletter input style.layout */
+.newsletter form input {
+  padding: 15px;
+  margin-right: 30px;
+  font-size: 18px;
+  color: #b28657;
+  flex: 1;
+  border: 1px solid #b28657;
+}
+
+/* responsiveness newsletter FLEXBOX */
+@media (max-width: 768px) {
+  .newsletter form input {
+    flex-basis: 100%;
+    margin: 0 0 20px 0;
+  }
+}
+
+/* contact area style.layout */
+.contactMe .content-area .contact {
+  height: 300px;
+  padding: 20px;
+  flex-basis: 50%;
+  text-align: center;
+  color: #b28657;
+}
+
+/* contact area layout */
+.contact {
+  margin-top: 40px;
+}
+
+/* contact area icons style.layout */
+.contact i {
+  font-size: 50px;
+}
+
+/* contact area input style.layout */
+.contact input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 25px;
+  padding: 15px;
+  border: 1px solid #b28657;
+  color: #b28657;
+}
+
+/* contact area input submit style.layout */
+.contact input[type="submit"] {
+  background: #62492d;
+  border: none;
+  font-size: 16px;
+  font-family: "Philosopher", "sans-serif";
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* submit hover style.layout */
+.contact input[type="submit"]:hover {
+  opacity: 1;
+  background: #62492d;
+  color: #333;
+}
+
+/* responsiveness contact area FLEXBOX */
+@media (max-width: 768px) {
+  .contactMe .content-area .contact {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* footer style.layout FLEXBOX */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #62492d;
+  color: #b28657;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+/* footer style.layout */
+footer p {
+  text-transform: uppercase;
+  font-size: 16px;
+  opacity: 0.6;
+  align-self: center;
+}
